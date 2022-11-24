@@ -62,10 +62,10 @@ const fetchTransferFundsContract = (signerOrProvider) =>
 
 const connectToTransferFunds = async () => {
   try {
-    // const web3Modal = new Wenb3Modal();
-    // const connection = await web3Modal.connect();
-    // const provider = new ethers.providers.Web3Provider(connection);
-    const provider = new ethers.providers.JsonRpcProvider(
+    const web3Modal = new Wenb3Modal();
+    const connection = await web3Modal.connect();
+    const provider = new ethers.providers.Web3Provider(connection);
+    const Provider = new ethers.providers.JsonRpcProvider(
       "https://goerli.infura.io/v3/22e93319c7504d95a136f7c2c31714b4"
     );
     const signer = provider.getSigner();
@@ -182,11 +182,11 @@ export const NFTMarketplaceProvider = ({ children }) => {
 
       const transaction = !isReselling
         ? await contract.createToken(url, price, {
-            value: listingPrice.toString(),
-          })
+          value: listingPrice.toString(),
+        })
         : await contract.resellToken(id, price, {
-            value: listingPrice.toString(),
-          });
+          value: listingPrice.toString(),
+        });
 
       await transaction.wait();
       console.log(transaction);
