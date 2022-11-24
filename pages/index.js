@@ -49,7 +49,7 @@ const Home = () => {
   //CREATOR LIST
 
   const creators = getTopCreators(nfts);
-  // console.log(creators);
+  console.log(creators);
 
   return (
     <div className={Style.homePage}>
