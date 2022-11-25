@@ -7,13 +7,13 @@ import { create as ipfsHttpClient } from "ipfs-http-client";
 
 // const client = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
 
-const projectId = process.env.PROJECT_ID;
-const projectSecretKey = process.env.PROJECT_SECRET_KEY;
+const projectId = "2I1ceHAoLzFWsUd9LRRhD275UR0";
+const projectSecretKey = "940f3edaeb67e91c07900a008e89bd3f";
 const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
   "base64"
 )}`;
 
-const subdomain = process.env.SUBDOMAIN;
+const subdomain = "https://spacemart.infura-ipfs.io";
 
 const client = ipfsHttpClient({
   host: "infura-ipfs.io",
