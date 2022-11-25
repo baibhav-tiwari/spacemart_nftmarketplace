@@ -38,7 +38,7 @@ const searchPage = () => {
       name.toLowerCase().includes(value.toLowerCase())
     );
 
-    if (filteredNFTS.length === 0) {
+    if (filteredNFTS.length == 0) {
       setNfts(nftsCopy);
     } else {
       setNfts(filteredNFTS);

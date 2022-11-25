@@ -111,7 +111,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
       const bal = ethers.utils.formatEther(getBalance);
       setAccountBalance(bal);
     } catch (error) {
-      setError("Something wrong while connecting to wallet");
+      setError("wallet not connected !!");
       setOpenError(true);
     }
   };
