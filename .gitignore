@@ -193,3 +193,6 @@ cache
 artifacts
 
 >>>>>>> 8b648a33b19339b6f794904dd651d574ac646878
+
+# Local Netlify folder
+.netlify
