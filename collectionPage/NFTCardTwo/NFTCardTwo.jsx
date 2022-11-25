@@ -14,7 +14,7 @@ const NFTCardTwo = ({ NFTData }) => {
   const [likeInc, setLikeInc] = useState(21);
 
   const likeNFT = () => {
-    if (!like) {
+    if (like) {
       setLike(true);
       setLikeInc(23);
     } else {
@@ -26,7 +26,7 @@ const NFTCardTwo = ({ NFTData }) => {
   return (
     <div className={Style.NFTCardTwo}>
       {NFTData.map((el, i) => (
-        <Link href={{ pathname: "/NFT-details", query: el }} key={i + 1}>
+        <Link href={{ pathname: "/NFT-details", query: "el" }} key={i + 1}>
           <div className={Style.NFTCardTwo_box} key={i + 1}>
             <div className={Style.NFTCardTwo_box_like}>
               <div className={Style.NFTCardTwo_box_like_box}>
@@ -34,7 +34,7 @@ const NFTCardTwo = ({ NFTData }) => {
                   <BsImage className={Style.NFTCardTwo_box_like_box_box_icon} />
                   <p onClick={() => likeNFT()}>
                     {like ? <AiOutlineHeart /> : <AiFillHeart />}
-                    {""}
+                    {}
                     <span>{likeInc + 1}</span>
                   </p>
                 </div>
