@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['https://spacemart.infura-ipfs.io'],
+    domains: ["spacemart.infura-ipfs.io", "infura-ipfs.io"],
   },
 };
 
