@@ -10,7 +10,7 @@ import Style from "./NFTCardTwo.module.css";
 import { LikeProfile } from "../../components/componentsindex";
 
 const NFTCardTwo = ({ NFTData }) => {
-  const [like, setLike] = useState(false);
+  const [like, setLike] = useState(true);
   const [likeInc, setLikeInc] = useState(21);
 
   const likeNFT = () => {
