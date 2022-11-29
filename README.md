@@ -1,13 +1,7 @@
-# Sample Hardhat Project
+# spacemart_nftmarketplace.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+![WhatsApp Image 2022-11-25 at 18 50 56](https://user-images.githubusercontent.com/75496387/204562591-1f5201b7-e8d9-4c81-a419-e1183a8bdbda.jpg)
 
-Try running some of the following tasks:
+![WhatsApp Image 2022-11-25 at 18 51 23](https://user-images.githubusercontent.com/75496387/204562627-6d4459a4-8515-42fe-8257-0f40ed916e83.jpg)
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+![WhatsApp Image 2022-11-25 at 18 52 43](https://user-images.githubusercontent.com/75496387/204562678-47dcfd5a-1918-4b76-9af3-f7895e09c398.jpg)
